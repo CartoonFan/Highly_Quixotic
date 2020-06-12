@@ -7,8 +7,7 @@ addons:
       secure: "K4Ye7wClDOMdobZtTufhCeG/pnUjh2tHz91YHqU8tC2DWTVP3pkoEagqbmM5LzjTpcw7zP4NRSzC2/6Pn/dDJElUAxJ9CGxF2G3/4CdD7UySqx/C3az9CE+v3Jixu6PEpsxGToes/Y2ckc/uF6FIagWEBywrKGJrDD2G+UsU53vTuVEXMDiLnZobxzOtIncgFsTiEH9oGCQhBnv+GnBT+B9GyneXjrj/gSOB8wTNcEDzJsGBRou4Zm3br7PKSraItS8+OR7kOEwBeNYchCcM2Dr920sbMN14f2eD6Huh4H80MB2AdXdh3Va1ZET9W9a3CmyHj/JiJLx19BOhyfXogRO09tX/O8kj9VKBkGlmDTGNwSSMwvdhI8R9PZ+vVPFmkj2d5NXaCpE1T87fwHZnfHKUpW5xmENyindl2we59ogQ5Sf/5ck/aJWPDR6sfh+SZbxzGHzlhd4FYBzAiVCtZoM4hYjsURCJL9walM97GjfCX8BSOx4/yY9YiH+LgP2ZLyf20gt2pkbRkjwiYtnOdYdA35XJFTXCcFfXKRcF29WG5ccp4vz7QQP3PzXcN2eGsM4qucPZLwuNuqM+Ad19M2Atro3to5RC7D3OaSmRj+RTGhRgFGcDl7F4V7RJuvZGsFbIv1sPHpGchp/8qO/zcuKxU4HXkWGhNlJRmZlPQgY="
 
 script:
-  - cd Core
-  - qmake
+  - qmake Core/Core.pro
 # Wraps the compilation with the Build Wrapper to generate configuration (used
   # later by the SonarScanner) into the "bw-output" folder
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
