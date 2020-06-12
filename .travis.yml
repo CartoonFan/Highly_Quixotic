@@ -1,0 +1,8 @@
+language: cpp
+before_install:
+- git fetch --unshallow
+
+script:
+  - cd Core
+  - qmake
+  - make clean all
