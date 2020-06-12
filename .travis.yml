@@ -1,8 +1,5 @@
 language: cpp
 
-before_install:
-- git fetch --unshallow
-
 addons:
   sonarcloud:
     organization: "cartoonfan"
